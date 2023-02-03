@@ -6,7 +6,12 @@ import CountryInfo from "./components/CountryInfo/CountryInfo";
 function App() {
   return (
     <>
-      <div>
+      <div className="header">
+        <div className="container">
+          <h5>Country Search</h5>
+        </div>
+      </div>
+      <div className="container">
         <Routes>
           <Route path="/" element={<AllCountries />} />
           <Route path="/country/:countryName" element={<CountryInfo />} />
